@@ -1,0 +1,90 @@
+  /* base style for large screens */
+
+/* custom fonts */
+@font-face {
+    font-family: 'Tangerine';
+    src: url('/fonts/Tangerine-Bold.ttf')
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("/fonts/Spartan-Regular.ttf")
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Spartan";
+}
+
+/* container div of all the data */
+.container {
+    margin: 2% ;
+}
+
+/*  our menu heading */
+.heading {
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Tangerine";
+    color: #8b0000;
+}
+
+/*  names of the dishes */
+.dish-title {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 1em;
+    background-color: darkred;
+    font-size: 1em;
+    color: #fff;
+}
+
+/* large screen grid layout (4-4-4 grid) */
+.col-lg-4 {
+    position: relative;
+    background-color: #deb887;
+    float: left;
+    width: 30%;
+    margin: 1%;
+    padding: 3.5em 1.5em 1.5em 1.5em;
+    border: 2px solid #000;
+}
+
+/* styles for tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+
+    .col-md-12 {
+        float: left;
+        width: 98%;
+        margin: 1%;
+
+
+    }
+}
+
+/* styles for mobile */
+@media all and (max-width: 767px) {
+    .col-sm-12 {
+        width: 98%;
+        margin: 1%;
+        float: none;
+        display: block;
+    }
+}
+
+.col-lg-4:hover {
+    position: relative;
+    font-size: 1.2em;
+    -webkit-box-shadow: 0px 0px 2em 1em rgba(34, 33, 33, 0.637);
+    box-shadow: 0px 0px 0.8em 0.1em rgba(0, 0, 0, 0.747);
+}
